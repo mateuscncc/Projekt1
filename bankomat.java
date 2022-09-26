@@ -2,22 +2,23 @@ import java.util.Scanner;
 
 public class bankomat{
     public static void main(String[] args) {
-        System.out.println("Podaj pin");
-        Scanner scanner = new Scanner(System.in);
+       System.out.println("Podaj pin");
+        Scanner scanner1 = new Scanner(System.in);
         int pin;
         int saldo = 1000;
-        pin = scanner.nextInt();
-        if (pin == 1234) {
+        pobierzPin pobierz1Pin = new pobierzPin();
+        pin = pobierz1Pin.pin1();
+       if (pin == 1234) {
 
             System.out.println("Witaj, co chcesz zrobić?");
             System.out.println("1-Wypłać gotówkę");
             System.out.println("2-Pokaż saldo");
-            int numoper = scanner.nextInt();
+            int numoper = scanner1.nextInt();
 
             switch (numoper) {
                 case 1 -> {
                     System.out.println("Podaj kwotę do wypłaty");
-                    int kwota = scanner.nextInt();
+                    int kwota = scanner1.nextInt();
                     if (kwota <= saldo) {
                         System.out.println("Wybieranie kwoty " + kwota + " zł powiodło się");
                         System.out.println("Twój stan konta to " + (saldo - kwota) + " zł");
