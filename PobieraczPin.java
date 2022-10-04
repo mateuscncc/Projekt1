@@ -10,21 +10,3 @@ public class PobieraczPin { // tu klasa
 }
 
 
-//public class PinHolder { // tu klasa
-//   private Integer pin;
-//   private String owner;
-//
-//    public Integer getPin() {
-//        return pin;
-//    }
-//
-//    public void setPin(Integer pin) {
-//        this.pin = pin;
-//    }
-//
-//    public String getOwner() {
-//        return owner;
-//    }
-//
-//    public void setOwner(String owner) {
-//        this.owner = owner;
